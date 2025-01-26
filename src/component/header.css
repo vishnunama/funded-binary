@@ -1,0 +1,139 @@
+/* Default Styles */
+.header {
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    padding: 15px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+
+.nav-links li {
+    position: relative;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* Buttons and Language Selector */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-trial {
+    background: #fff;
+    color: #0a0d40;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.flag-icon {
+    width: 25px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Menu for smaller screens */
+.menu {
+    display: none;
+    /* Hidden by default */
+    align-items: center;
+    gap: 10px;
+    background-color: #3b3953;
+    padding: 5px 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-btn{
+    outline: none;
+    border: none;
+   
+    /* Hidden by default */
+        align-items: center;
+        gap: 10px;
+        background-color: #3b3953;
+        padding: 10px 20px;
+        border-radius: 25px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+    
+
+}
+
+.menu-icon {
+    
+    font-size: 18px;
+}
+
+.menu-text {
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+
+    /* Hide navigation and actions */
+    .nav {
+        display: none;
+    }
+
+    .header-actions {
+        display: none;
+    }
+
+    /* Show menu */
+   
+        .header-container{
+            background: #342F48;
+            border-radius: 25px;
+
+        }
+
+      
+}
+
+@media (min-width: 701px) {
+
+    /* Hide menu for larger screens */
+.menu-btn {
+        display: none;
+    }
+}

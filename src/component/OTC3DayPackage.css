@@ -1,0 +1,140 @@
+/* Main container for centering the package setup card */
+.main-container-for-qnex-package-setup {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Card container styling */
+.card-wrapper-for-qnex-otc-package {
+    margin: 0px 10px;
+    background-color: white;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #D4D4D4;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+    max-width: 550px;
+    text-align: center;
+}
+
+/* Title header styles */
+.header-title-text-for-qnex-otc-package {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Instructions text */
+.instruction-text-for-payment-and-support {
+    font-size: 17px;
+    font-weight: 500;
+    color: #384444;
+    /* padding: 0px 20px; */
+    margin-bottom: 25px;
+}
+
+/* Support team button container and styling */
+.button-wrapper-for-support-team {
+    margin-bottom: 25px;
+}
+
+.action-button-for-support-team {
+    background-color: #384444;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action-button-for-support-team:hover {
+    background-color: #444;
+}
+
+/* Pricing section */
+.pricing-information-for-qnex-package {
+    font-size: 20px;
+
+    margin: 25px 0px;
+    color: #384444;
+}
+
+/* Information heading */
+.information-section-heading-for-package {
+    font-size: 18px;
+    color: #384444;
+    margin-bottom: 20px;
+}
+
+/* Payment methods list and items */
+.list-of-payment-methods-for-qnex {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.individual-payment-method-wrapper {
+    text-decoration: none;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background-color: #f0f0f0; */
+    padding: 12px;
+    margin: 3px 30px;
+    border-radius: 50px;
+    border: 2px solid #D4D4D4;
+}
+
+.icon-for-payment-method-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.payment-method-name-display-text {
+    text-decoration: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    flex-grow: 1;
+    /* margin-left: 12px; */
+}
+
+.payment-method-type-tag {
+    font-size: 14px;
+    color: #383838;
+}
+
+@media(max-width: 600px) {
+    .item-payment-inner {
+        flex-direction: column !important;
+        align-items: center !important;
+
+    }
+
+    .action-button-for-support-team {
+        padding: 10px 15px;
+    }
+
+    .header-title-text-for-qnex-otc-package {
+        padding: 10px 20px !important;
+        font-size: 1.3rem;
+    }
+
+    /* Instructions text */
+    .instruction-text-for-payment-and-support {
+
+        padding: 0px 20px;
+    }
+
+
+}

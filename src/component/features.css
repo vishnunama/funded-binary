@@ -1,0 +1,239 @@
+/* General Styling */
+
+
+.highlights-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Two columns */
+    grid-gap: 30px;
+}
+
+/* Highlight Header */
+.highlight-header {
+    /* grid-column: span 2; */
+    /* Spans across both columns */
+    text-align: left;
+}
+
+.highlight-header h1 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-weight: 700;
+}
+
+.highlight-header p {
+    line-height: 2rem;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Highlight Items */
+.highlight-item {
+   
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+
+
+@media(min-width: 750px) {
+
+
+    .highlight-header-1 {
+        display: none;
+
+    }
+
+        .additional-info-1{
+            display: none;
+        }
+
+    
+
+}
+
+
+@media(max-width: 750px){
+
+    
+.highlights-section {
+   display: none;
+
+}
+.highlight-header {
+    /* grid-column: span 2; */
+    /* Spans across both columns */
+    text-align: center;
+}
+}
+
+
+.highlight-item .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.highlight-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.highlight-item p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Additional Info */
+.additional-info {
+    /* grid-column: span 2; */
+    /* Spans across both columns */
+    margin-top: 40px;
+}
+
+.additional-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.additional-info ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+
+.additional-info-1 {
+    /* grid-column: span 2; */
+    /* Spans across both columns */
+    margin-top: 40px;
+}
+
+.additional-info-1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.additional-info-1 ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* Outer container to limit width and height */
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    max-width: 1000px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* Horizontal scrollable slider */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Each slide or card */
+.slider-item {
+    flex: none;
+    scroll-snap-align: center;
+    width: 300px;
+    text-align: left;
+    border-radius: 8px;
+    /* background-color: #f9f9f9; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Placeholder slide images */
+.slider-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Highlight items styling */
+.highlight-item img {
+    margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.highlight-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Hide slider for screens wider than 600px */
+@media (min-width: 751px) {
+    .slider-container {
+        display: none;
+    }
+}
+
+.highlight-header-1 {
+    /* grid-column: span 2; */
+    /* Spans across both columns */
+    text-align: left;
+}
+
+.highlight-header-1 h1 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-weight: 700;
+}
+
+.highlight-header-1 p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.responsive-grid {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    /* Default for larger screens */
+    gap: 10px;
+    /* Space between grid items */
+}
+
+@media (max-width: 750px) {
+    .responsive-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        /* 2 columns for smaller screens */
+    }
+}

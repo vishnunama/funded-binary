@@ -1,0 +1,21 @@
+   .gradient-button{
+    background-color: transparent;
+    border: 1px solid #CBAFE0;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #CAACD7;
+    /* color: linear-gradient(to right, #89a8ff, #ae52ff, #582cff); */
+
+   }
+   
+
+   @media(max-width: 750px){
+    .gradient-button{
+        margin-top: 100px;
+    }
+   }
+
+
+   .grid-container-in{
+    display: flex;
+   }

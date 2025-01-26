@@ -1,0 +1,58 @@
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #070713;
+    color: #fff;
+    padding: 40px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footer-left {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-email {
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 3;
+    justify-content: space-between;
+}
+
+.footer-column {
+    min-width: 160px;
+}
+
+.footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    font-size: 0.9rem;
+    line-height: 1.8;
+}

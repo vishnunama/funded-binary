@@ -1,0 +1,115 @@
+/* Sidebar hidden state */
+.sidebar {
+    border-radius: 25px;
+    position: fixed;
+    left: 3000px;
+    /* Hides the sidebar off-screen */
+    width: calc(100% - 40px);
+    /* Subtracting margin */
+    height: 100%;
+    /* Full height of the screen */
+    background-color: #2e2c4b;
+    color: white;
+    z-index: 20;
+    padding: 20px;
+    margin: 20px;
+    /* Adds margin */
+    box-sizing: border-box;
+    /* Includes padding in width/height */
+    transition: all 0.3s ease-in-out;
+    /* Smooth slide animation */
+    overflow-y: auto;
+    /* Adds scrolling if content overflows */
+}
+
+/* Default top when not scrolled */
+.sidebar {
+    top: 80px;
+    /* Sidebar starts 100px below the top */
+}
+
+/* Sidebar when scrolled */
+.sidebar.scrolled {
+    top: 0;
+    /* Sidebar sticks to the top when scrolled */
+}
+
+/* Sidebar visible */
+.sidebar.active {
+    left: 0;
+    /* Slides into view */
+}
+
+/* Sidebar Overlay */
+.sidebar-overlay.active {
+    display: block;
+}
+
+/* Sidebar header styles */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-header .close-btn {
+    background: #ffc107;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Sidebar links */
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-links li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar-links li:hover {
+    text-decoration: underline;
+}
+
+/* Language and buttons */
+.sidebar-actions {
+    margin-top: 20px;
+}
+
+.sidebar-actions button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar-actions .btn-login {
+    background: #fff;
+    color: #2e2c4b;
+}
+
+.sidebar-actions .btn-trial {
+    background: #ffc107;
+    color: #000;
+}
+
+.language-selector {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}

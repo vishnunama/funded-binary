@@ -1,0 +1,167 @@
+.banner-inner-main{
+    display: flex;
+    margin: 40px 0px;
+    justify-content: center;
+}
+.banner-inner-1{
+    width: 100%;
+    max-width: 400px;
+
+}
+.banner-inner-2{
+    width: 100%;
+        max-width: 790px;
+
+}
+
+@media(max-width: 700px){
+    .banner-inner-main{
+        flex-direction: column;
+        
+    }
+
+.banner-inner-1{
+    width: 100% !important;
+    max-width: 100%;
+}
+   
+}
+
+
+
+
+.community-support-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.support-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+@media(max-width: 800px){
+    .support-cards{
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .card{
+        width: 92% !important; 
+    }
+        .card-1 {
+            width: 93% !important;
+            max-width: 100% !important;
+        }
+                .card-2{
+                    width: 93% !important;
+                    max-width: 100% !important;
+                }
+}
+
+.card {
+    
+    background-color: #161234;
+    border-radius: 12px;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 700px;
+
+    text-align: left;
+    padding-bottom: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-1 {
+
+    background-color: #161234;
+    border-radius: 12px;
+    
+    width: 100%;
+    max-width: 200px;
+    padding: 20px;
+    text-align: left;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-2 {
+
+    background-color: #161234;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+        max-width: 200px;
+
+    text-align: left;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card h3 {
+    margin-bottom: 22px;
+    
+    font-size:  1.5rem;
+    font-weight: 100;
+}
+
+.card-1 p{
+    color: #B5B4C0;
+
+}
+.card-2 p {
+    color: #B5B4C0;
+
+}
+
+
+.card-1 h3 {
+    margin-bottom: 22px;
+
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.card-2 h3 {
+    margin-bottom: 22px;
+
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.stats{
+    display: flex;
+    gap: 30px;
+}
+
+.card .stats p,
+.card p {
+    margin: 10px 0;
+}
+.border-inner{
+    
+    padding-left: 13px;
+    /* border-radius: 50%; */
+}
+
+.card .highlight {
+    /* color: #a29bfe; */
+    font-size: 1.4rem;
+    padding-bottom: 8px;
+    /* Highlighted text color */
+    /* font-weight: bold; */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}

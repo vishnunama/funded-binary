@@ -1,0 +1,128 @@
+.hard-variables-table-container {
+    background-color: #211B37;
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    /* max-width: 420px; */
+    margin: 50px ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.hard-variables-table-container-1 {
+    background-color: #211B37;
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    /* max-width: 420px; */
+    margin: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.hard-table-header {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2C2741;
+    padding-bottom: 12px;
+    /* margin-bottom: 12px; */
+}
+
+.hard-table-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #a3a0f9;
+}
+
+@media(max-width: 500px){
+    .hard-table-title{
+        font-size: .8rem;
+        letter-spacing: 1px !important;
+    }
+}
+
+.hard-table-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hard-logo-icon {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.hard-logo-text {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.hard-table-row:hover{
+            background-color: #211B37 !important;
+
+}
+
+.hard-table-row {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    border-bottom: 1px solid #2C2741;
+}
+
+@media(max-width: 600px){
+    .hard-table-row{
+        padding: 20px 10px;
+    }
+
+}
+
+.hard-table-row:last-child {
+    border-bottom: none;
+}
+
+.hard-table-key {
+    padding-right: 20px;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #d0d0d5;
+}
+/* .hard-table-content:hover{
+    background-color: #211B37 !important;
+} */
+.hard-table-value {
+    text-align: end;
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+@media(max-width: 800px){
+    .hard-variables-table-container{
+        display: none;
+    }
+    .hard-variables-table-container-1{
+        margin: 20px;
+    }
+    .main-funded-next{
+        display: none !important;
+    }
+        .main-funded-next-1 {
+            /* display: none !important; */
+            margin-top: 0px !important;
+        }
+}
+
+@media(min-width: 800px) {
+    .hard-variables-table-container-1 {
+        display: none;
+    }
+    .main-funded-next-1{
+        display: none !important;
+        margin-top: 0px !important;
+    }
+}
+
+
